@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh Sách Cửa Hàng</title>
+  <link rel="stylesheet" href="./CuaHang.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="top-nav">
+          <div class="logo">
+            <a href="../cuoiki.html"><img src="../logoshop.jpg" alt="Logo" class="glow-logo" /></a>
+            <a href="../cuoiki.html"><span class="brand-slogan">Double Nguyên Sport</span> </a>
+          </div>
+      
+          <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm sản phẩm, môn thể thao" />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="nav-icons">
+            <a href="../login.html"><div><i class="fas fa-user"></i><span>Đăng nhập</span></div></a>
+            <div><i class="fas fa-store"></i><span>Cửa hàng</span></div>
+            <a href="../HoTro/hotro.html"><div><i class="fas fa-comments"></i><span>Hỗ trợ</span></div></a>
+            <div><i class="fas fa-shopping-cart"></i><span>Giỏ hàng</span></div>
+          </div>
+        </div>
+      
+        <nav class="bottom-nav">
+          <ul>
+            <li class="has-mega-menu">
+              Môn Thể Thao
+              <div class="mega-menu">
+                <div class="menu-left">
+                  <h4>MÔN THỂ THAO <a href="#">Xem tất cả</a></h4>
+                  <ul>
+                    <li>Chạy Bộ & Đi Bộ</li>
+                    <li>Leo Núi & Dã Ngoại</li>
+                    <li>Bơi lội</li>
+                    <li>Tập Gym & Boxing</li>
+                    <li>Thể Thao Dưới Nước</li>
+                    <li>Thể Thao Dùng Vợt</li>
+                    <li>Yoga & Pilates</li>
+                    <li>Đạp Xe</li>
+                    <li>Thể Thao Đồng Đội</li>
+                  </ul>
+                </div>
+                <div class="menu-right">
+                  <img src="./bannermenu.jpg" alt="Banner" />
+                </div>
+              </div>
+            </li>
+            <a href="../Nam/nam.html"><li>Nam</li></a>
+        <a href="../Nu/Nu.html"><li>Nữ</li></a>
+        <a href="../TreEm/treem.html"><li>Trẻ Em</li></a>
+       <a href="../PhuKienTheThao/PhuKienTheThao.html"><li>Phụ Kiện Thể Thao</li></a> 
+        <a href="../DuLich/Dulich.html"><li>Du Lịch</li></a>
+        <a href="../SanPhamMoi/SanPhamMoi.html"><li><span class="new">Sản Phẩm Mới</span></li></a>
+        <a href="../HotSale/HotSale.html"><li><span class="hot">HOT SALE</span></li></a>
+        <a href="../MaKhung/MaKhung.html"><li><span class="discount">MÃ KHỦNG 12%</span></li></a>
+          </ul>
+        </nav>
+      </header> 
+  <!-- Map section -->
+  <section class="map-section">
+    <div class="map">
+      <img src="./maphcm.jpg" alt="Map HCM">
+    </div>
+    <div class="map">
+      <img src="./maphanoi.jpg" alt="Map HN">
+    </div>
+  </section>
+
+  <!-- Store List -->
+  <section class="store-list">
+    <h2>Danh Sách Cửa Hàng Decathlon Ở Hà Nội</h2>
+    <div class="store-grid">
+      <div class="store-card" onclick="goToStore('thanh-xuan')">
+        <img src="./Cuahang.jpg" alt="Cửa hàng Thanh Xuân">
+        <div class="store-name">Cửa Hàng Thanh Xuân</div>
+      </div>
+      <div class="store-card" onclick="goToStore('ha-dong')">
+        <img src="./Cuahang2.jpg" alt="Cửa hàng Hà Đông">
+        <div class="store-name">Cửa Hàng Hà Đông</div>
+      </div>
+      <div class="store-card" onclick="goToStore('times-city')">
+        <img src="./cuahang3.jpg" alt="Cửa hàng Times City">
+        <div class="store-name">Cửa Hàng Times City</div>
+      </div>
+    </div>
+
+    <h2>Danh Sách Cửa Hàng Decathlon Ở Hồ Chí Minh</h2>
+    <div class="store-grid">
+      <div class="store-card" onclick="goToStore('tan-phu')">
+        <img src="./cuahang4.jpg" alt="Cửa hàng Tân Phú">
+        <div class="store-name">Cửa Hàng Tân Phú</div>
+      </div>
+      <div class="store-card" onclick="goToStore('thao-dien')">
+        <img src="./cuahang5.jpg" alt="Cửa hàng Thảo Điền">
+        <div class="store-name">Cửa Hàng Thảo Điền</div>
+      </div>
+      <div class="store-card" onclick="goToStore('parc-mall')">
+        <img src="./cuahang6.jpg" alt="Cửa hàng Parc Mall">
+        <div class="store-name">Cửa Hàng Parc Mall</div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script >
+    function goToStore(slug) {
+  // Đây bạn có thể thay bằng link thật hoặc link tạm
+  window.location.href = `store-detail/${slug}.html`;
+}
+
+  </script>
+</body>
+</html>
